@@ -21,7 +21,7 @@ const __dirname = path.resolve();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin:"https://rabbit-io-frontend.vercel.app",
+    origin:"http://localhost:5173",
     credentials:true
 }));
 
