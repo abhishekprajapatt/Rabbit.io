@@ -24,116 +24,13 @@ import {
 import PurchaseCourseProtectedRoute from './components/PurchaseCourseProtectedRoute';
 import { ThemeProvider } from './components/ThemeProvider';
 
-// const appRouter = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <MainLayout />,
-//     children: [
-//       {
-//         path: "/",
-//         element: (
-//           <>
-//             <HeroSection />
-//             <Courses />
-//           </>
-//         ),
-//       },
-//       {
-//         path: "login",
-//         element: (
-//           <AuthenticatedUser>
-//             <Login />
-//           </AuthenticatedUser>
-//         ),
-//       },
-//       {
-//         path: "my-learning",
-//         element: (
-//           <ProtectedRoute>
-//             <MyLearning />
-//           </ProtectedRoute>
-//         ),
-//       },
-//       {
-//         path: "profile",
-//         element: (
-//           <ProtectedRoute>
-//             <Profile />
-//           </ProtectedRoute>
-//         ),
-//       },
-//       {
-//         path: "course/search",
-//         element: (
-//           <ProtectedRoute>
-//             <SearchPage />
-//           </ProtectedRoute>
-//         ),
-//       },
-//       {
-//         path: "course-detail/:courseId",
-//         element: (
-//           <ProtectedRoute>
-//             <CourseDetail />
-//           </ProtectedRoute>
-//         ),
-//       },
-//       {
-//         path: "course-progress/:courseId",
-//         element: (
-//           <ProtectedRoute>
-//             <PurchaseCourseProtectedRoute>
-//             <CourseProgress />
-//             </PurchaseCourseProtectedRoute>
-//           </ProtectedRoute>
-//         ),
-//       },
-
-//       // admin
-//       {
-//         path: "admin",
-//         element: (
-//           <AdminRoute>
-//             <Sidebar />
-//           </AdminRoute>
-//         ),
-//         children: [
-//           {
-//             path: "dashboard",
-//             element: <Dashboard />,
-//           },
-//           {
-//             path: "course",
-//             element: <CourseTable />,
-//           },
-//           {
-//             path: "course/create",
-//             element: <AddCourse />,
-//           },
-//           {
-//             path: "course/:courseId",
-//             element: <EditCourse />,
-//           },
-//           {
-//             path: "course/:courseId/lecture",
-//             element: <CreateLecture />,
-//           },
-//           {
-//             path: "course/:courseId/lecture/:lectureId",
-//             element: <EditLecture />,
-//           },
-//         ],
-//       },
-//     ],
-//   },
-// ]);
 const appRouter = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <MainLayout />,
     children: [
       {
-        path: '/',
+        path: "/",
         element: (
           <>
             <HeroSection />
@@ -142,57 +39,87 @@ const appRouter = createBrowserRouter([
         ),
       },
       {
-        path: 'login',
-        element: <Login />,
+        path: "login",
+        element: (
+          <AuthenticatedUser>
+            <Login />
+          </AuthenticatedUser>
+        ),
       },
       {
-        path: 'my-learning',
-        element: <MyLearning />,
+        path: "my-learning",
+        element: (
+          <ProtectedRoute>
+            <MyLearning />
+          </ProtectedRoute>
+        ),
       },
       {
-        path: 'profile',
-        element: <Profile />,
+        path: "profile",
+        element: (
+          <ProtectedRoute>
+            <Profile />
+          </ProtectedRoute>
+        ),
       },
       {
-        path: 'course/search',
-        element: <SearchPage />,
+        path: "course/search",
+        element: (
+          <ProtectedRoute>
+            <SearchPage />
+          </ProtectedRoute>
+        ),
       },
       {
-        path: 'course-detail/:courseId',
-        element: <CourseDetail />,
+        path: "course-detail/:courseId",
+        element: (
+          <ProtectedRoute>
+            <CourseDetail />
+          </ProtectedRoute>
+        ),
       },
       {
-        path: 'course-progress/:courseId',
-        element: <CourseProgress />,
+        path: "course-progress/:courseId",
+        element: (
+          <ProtectedRoute>
+            <PurchaseCourseProtectedRoute>
+            <CourseProgress />
+            </PurchaseCourseProtectedRoute>
+          </ProtectedRoute>
+        ),
       },
 
       // admin
       {
-        path: 'admin',
-        element: <Sidebar />,
+        path: "admin",
+        element: (
+          <AdminRoute>
+            <Sidebar />
+          </AdminRoute>
+        ),
         children: [
           {
-            path: 'dashboard',
+            path: "dashboard",
             element: <Dashboard />,
           },
           {
-            path: 'course',
+            path: "course",
             element: <CourseTable />,
           },
           {
-            path: 'course/create',
+            path: "course/create",
             element: <AddCourse />,
           },
           {
-            path: 'course/:courseId',
+            path: "course/:courseId",
             element: <EditCourse />,
           },
           {
-            path: 'course/:courseId/lecture',
+            path: "course/:courseId/lecture",
             element: <CreateLecture />,
           },
           {
-            path: 'course/:courseId/lecture/:lectureId',
+            path: "course/:courseId/lecture/:lectureId",
             element: <EditLecture />,
           },
         ],
@@ -200,6 +127,79 @@ const appRouter = createBrowserRouter([
     ],
   },
 ]);
+// const appRouter = createBrowserRouter([
+//   {
+//     path: '/',
+//     element: <MainLayout />,
+//     children: [
+//       {
+//         path: '/',
+//         element: (
+//           <>
+//             <HeroSection />
+//             <Courses />
+//           </>
+//         ),
+//       },
+//       {
+//         path: 'login',
+//         element: <Login />,
+//       },
+//       {
+//         path: 'my-learning',
+//         element: <MyLearning />,
+//       },
+//       {
+//         path: 'profile',
+//         element: <Profile />,
+//       },
+//       {
+//         path: 'course/search',
+//         element: <SearchPage />,
+//       },
+//       {
+//         path: 'course-detail/:courseId',
+//         element: <CourseDetail />,
+//       },
+//       {
+//         path: 'course-progress/:courseId',
+//         element: <CourseProgress />,
+//       },
+
+//       // admin
+//       {
+//         path: 'admin',
+//         element: <Sidebar />,
+//         children: [
+//           {
+//             path: 'dashboard',
+//             element: <Dashboard />,
+//           },
+//           {
+//             path: 'course',
+//             element: <CourseTable />,
+//           },
+//           {
+//             path: 'course/create',
+//             element: <AddCourse />,
+//           },
+//           {
+//             path: 'course/:courseId',
+//             element: <EditCourse />,
+//           },
+//           {
+//             path: 'course/:courseId/lecture',
+//             element: <CreateLecture />,
+//           },
+//           {
+//             path: 'course/:courseId/lecture/:lectureId',
+//             element: <EditLecture />,
+//           },
+//         ],
+//       },
+//     ],
+//   },
+// ]);
 
 function App() {
   return (
