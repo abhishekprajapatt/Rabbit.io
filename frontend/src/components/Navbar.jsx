@@ -148,7 +148,7 @@ const Navbar = () => {
               <Button onClick={() => navigate('/login')}>Signup</Button>
             </div>
           )}
-          <DarkMode className="px-4" />
+          <DarkMode className="mr-8" />
         </div>
       </div>
       {/* Mobile device  */}
