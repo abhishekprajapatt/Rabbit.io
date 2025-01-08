@@ -5,8 +5,8 @@ import {
   Menu,
   UserPen,
 } from 'lucide-react';
-import WiteLogo from "../assets/whitelogo.png";
-import BlackLogo from "../assets/blacklogo.png";
+import WiteLogo from '../assets/whitelogo.png';
+import BlackLogo from '../assets/blacklogo.png';
 import React, { useEffect } from 'react';
 import {
   DropdownMenu,
@@ -55,15 +55,11 @@ const Navbar = () => {
     <div className="h-16 dark:bg-[#020817] bg-white border-b dark:border-b-gray-800 border-b-gray-200 fixed top-0 left-0 right-0 duration-300 z-10">
       {/* Desktop */}
       <div className="max-w-7xl mx-auto hidden md:flex justify-between items-center gap-10 h-full">
-        <div className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <img src={WiteLogo} className="w-10 hidden dark:block " />
           <img src={BlackLogo} className="w-10 dark:hidden" />
-          <Link to="/">
-            <h1 className="hidden md:block font-extrabold text-2xl">
-              Rabbit.io
-            </h1>
-          </Link>
-        </div>
+          <h1 className="hidden md:block font-extrabold text-2xl">Rabbit.io</h1>
+        </Link>
         <div className="flex items-center gap-8">
           {user ? (
             <DropdownMenu>
@@ -95,7 +91,9 @@ const Navbar = () => {
                     <AvatarFallback>CN</AvatarFallback>
                   </Avatar>
                   <div className="flex flex-col">
-                    <h1 className="font-bold text-gray-700 font-serif">{user?.name}</h1>
+                    <h1 className="font-bold text-gray-700 font-serif">
+                      {user?.name}
+                    </h1>
                     <h1 className="text-xs text-gray-400 font-thin">
                       {user?.email}
                     </h1>
@@ -158,7 +156,9 @@ const Navbar = () => {
         <h1 className="flex gap-2 font-extrabold text-2xl">
           <img src={WiteLogo} className="w-8 " />
           <img src={BlackLogo} className="w-8 dark:hidden" />
-          <Link to="/" className="font-extrabold text-2xl my-2">Rabbit.io</Link>
+          <Link to="/" className="font-extrabold text-2xl my-2">
+            Rabbit.io
+          </Link>
         </h1>
         <MobileNavbar user={user} />
       </div>
@@ -169,7 +169,7 @@ const Navbar = () => {
 export default Navbar;
 
 const MobileNavbar = ({ user }) => {
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <Sheet>
@@ -184,7 +184,10 @@ const navigate = useNavigate();
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         <SheetHeader className="flex flex-row items-center justify-between mt-2">
-          <SheetTitle className="flex gap-2 cursor-pointer" onClick={() => navigate('profile')}>
+          <SheetTitle
+            className="flex gap-2 cursor-pointer"
+            onClick={() => navigate('profile')}
+          >
             <Avatar>
               <AvatarImage
                 src={
@@ -196,7 +199,9 @@ const navigate = useNavigate();
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
             <div className="flex flex-col">
-              <h1 className="font-bold text-gray-700 font-serif">{user?.name}</h1>
+              <h1 className="font-bold text-gray-700 font-serif">
+                {user?.name}
+              </h1>
               <h1 className="text-xs text-gray-400 font-thin">{user?.email}</h1>
             </div>
           </SheetTitle>
