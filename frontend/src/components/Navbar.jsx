@@ -150,7 +150,7 @@ const Navbar = () => {
               <Button onClick={() => navigate('/login')}>Signup</Button>
             </div>
           )}
-          <DarkMode />
+          <DarkMode className="px-4" />
         </div>
       </div>
       {/* Mobile device  */}
@@ -200,7 +200,7 @@ const navigate = useNavigate();
               <h1 className="text-xs text-gray-400 font-thin">{user?.email}</h1>
             </div>
           </SheetTitle>
-          <DarkMode />
+          <DarkMode className="px-2" />
         </SheetHeader>
         <Separator className="mr-2" />
         <nav className="flex flex-col space-y-4">
