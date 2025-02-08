@@ -1,7 +1,7 @@
 # 📚 Learning Management System (LMS) Project Documentation
 
-- # Landing Pages
-- <img width="659" alt="Screenshot 2025-02-08 112741" src="https://github.com/user-attachments/assets/e71547af-c9e0-44fb-8d82-4c0f2aa1903b" />
+# 📟 Landing Page
+<img width="659" alt="Screenshot 2025-02-08 112741" src="https://github.com/user-attachments/assets/e71547af-c9e0-44fb-8d82-4c0f2aa1903b" />
 
 ##  🌐 Project Overview
 This **Learning Management System (LMS)** is a web application designed to streamline the management of online learning activities. It provides users with features like course enrollment, progress tracking, and course content management, making education more accessible and efficient.
