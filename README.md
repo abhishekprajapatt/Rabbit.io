@@ -1,5 +1,5 @@
 # Learning Management System (LMS) 📚
-<img width="947" alt="Screenshot 2025-02-08 110645" src="https://github.com/user-attachments/assets/a345e206-2744-4a57-af6a-0f12d3b1eda8" />
+![image](https://github.com/user-attachments/assets/883b1738-2813-40be-b325-3c8331094759)
 
 ## 🌐 Project Overview
 This **Learning Management System (LMS)** is a cutting-edge platform that simplifies education management and learning processes. It is designed to offer a seamless experience for administrators, educators, and students alike. With its dynamic features and robust architecture, this project demonstrates the power of the **MERN stack** in building scalable and interactive web applications.
