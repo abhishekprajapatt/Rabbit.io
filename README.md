@@ -58,8 +58,8 @@ This **Learning Management System (LMS)** is a web application designed to strea
 - 🖥️ Perform manual testing through Postman or the frontend interface.
 
 ## 🌍 Deployment
-- 🌟 **Frontend** hosted on Vercel/Netlify.
-- ☁️ **Backend** hosted on Heroku/AWS.
+- 🌟 **Frontend** hosted on Vercel
+- ☁️ **Backend** hosted on Vercel
 - 💾 **Database** hosted on MongoDB Atlas.
 
 ## 👥 Roles and Responsibilities
