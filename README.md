@@ -86,7 +86,7 @@ This **Learning Management System (LMS)** is a web application designed to strea
 - ![image](https://github.com/user-attachments/assets/e742b40a-4100-4dcb-a315-f7dcc92bfdbb)
 - # ⚙️ Edit Courses
 - ![Screenshot 2025-02-08 113829](https://github.com/user-attachments/assets/632d1bd1-c878-403c-8af1-c1e06790046d)
-- # 🎞📹 Create Lectures 
+- # 📹 Create Lectures 
 - ![Screenshot 2025-02-08 113909](https://github.com/user-attachments/assets/b78de1a2-5851-4ec6-be7e-bb539b3043fd)
 - # 🎞️ Edit Lectures
 - ![Screenshot 2025-02-08 113919](https://github.com/user-attachments/assets/9260f8d2-9976-4b2d-aacc-f9948bde97ce)
