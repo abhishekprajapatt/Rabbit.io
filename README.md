@@ -1,6 +1,7 @@
 # 📚 Learning Management System (LMS) Project Documentation
 
-![image](https://github.com/user-attachments/assets/883b1738-2813-40be-b325-3c8331094759)
+- # Landing Pages
+- <img width="659" alt="Screenshot 2025-02-08 112741" src="https://github.com/user-attachments/assets/e71547af-c9e0-44fb-8d82-4c0f2aa1903b" />
 
 ##  🌐 Project Overview
 This **Learning Management System (LMS)** is a web application designed to streamline the management of online learning activities. It provides users with features like course enrollment, progress tracking, and course content management, making education more accessible and efficient.
@@ -78,12 +79,19 @@ This **Learning Management System (LMS)** is a web application designed to strea
 - 🌎 Support for multiple languages.
 - 🤖 AI-based recommendations for personalized learning paths.
 
----
+
 ## Some Screenshots This Rabbit.io Project
-![image](https://github.com/user-attachments/assets/0bbc85ee-14a3-402c-92eb-da59fbb83f81)
-![Screenshot 2025-02-08 113829](https://github.com/user-attachments/assets/632d1bd1-c878-403c-8af1-c1e06790046d)
-![Screenshot 2025-02-08 113909](https://github.com/user-attachments/assets/b78de1a2-5851-4ec6-be7e-bb539b3043fd)
-![Screenshot 2025-02-08 113919](https://github.com/user-attachments/assets/9260f8d2-9976-4b2d-aacc-f9948bde97ce)
+
+- # 📈 Admin DashBoard 
+- ![image](https://github.com/user-attachments/assets/0bbc85ee-14a3-402c-92eb-da59fbb83f81)
+- # 🗃️ Create Courses
+- ![image](https://github.com/user-attachments/assets/e742b40a-4100-4dcb-a315-f7dcc92bfdbb)
+- # ⚙️ Edit Courses
+- ![Screenshot 2025-02-08 113829](https://github.com/user-attachments/assets/632d1bd1-c878-403c-8af1-c1e06790046d)
+- # 🎞📹 Create Lectures 
+- ![Screenshot 2025-02-08 113909](https://github.com/user-attachments/assets/b78de1a2-5851-4ec6-be7e-bb539b3043fd)
+- # 🎞️ Edit Lectures
+- ![Screenshot 2025-02-08 113919](https://github.com/user-attachments/assets/9260f8d2-9976-4b2d-aacc-f9948bde97ce)
 
 
 
