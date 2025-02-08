@@ -53,3 +53,11 @@ This **Learning Management System (LMS)** is a cutting-edge platform that simpli
 
 This LMS system combines simplicity and functionality with modern web technologies. It is built to handle complex workflows with ease, making it an excellent starting point for further customization and scaling.
 
+![image](https://github.com/user-attachments/assets/0bbc85ee-14a3-402c-92eb-da59fbb83f81)
+![Screenshot 2025-02-08 113829](https://github.com/user-attachments/assets/632d1bd1-c878-403c-8af1-c1e06790046d)
+![Screenshot 2025-02-08 113909](https://github.com/user-attachments/assets/b78de1a2-5851-4ec6-be7e-bb539b3043fd)
+![Screenshot 2025-02-08 113919](https://github.com/user-attachments/assets/9260f8d2-9976-4b2d-aacc-f9948bde97ce)
+
+
+
+
