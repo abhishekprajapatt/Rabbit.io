@@ -176,7 +176,7 @@ const CourseTab = () => {
           </div>
           <div>
             <Label>Description</Label>
-            <RichTextEditor input={input} setInput={setInput} />
+            <RichTextEditor className="dark:text-white" input={input} setInput={setInput} />
           </div>
           <div className="flex items-center gap-5">
             <div>
