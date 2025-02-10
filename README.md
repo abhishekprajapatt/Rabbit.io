@@ -72,12 +72,6 @@ This **Learning Management System (LMS)** is a web application designed to strea
 - 📱 Ensuring responsive design across devices.
 - ⚡ Optimizing backend for scalability and performance.
 
-## 🚀 Future Enhancements
-- 🎥 Integration with third-party services like Zoom for live classes.
-- 🌎 Support for multiple languages.
-- 🤖 AI-based recommendations for personalized learning paths.
-
-
 ## Some Screenshots This Rabbit.io Project
 
 - # 📈 Admin DashBoard 
