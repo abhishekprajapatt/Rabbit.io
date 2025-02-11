@@ -1,3 +1,4 @@
+import LoadinSpinner from '@/components/LoadinSpinner';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import {
@@ -22,7 +23,7 @@ const CourseTable = () => {
 
   if(isLoading){
     return (
-      <><h1 className="text-7xl">Loading...</h1></>
+      <LoadinSpinner/>
     )
   }
   return (

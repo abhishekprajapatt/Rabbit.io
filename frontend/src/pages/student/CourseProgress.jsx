@@ -1,3 +1,4 @@
+import LoadinSpinner from '@/components/LoadinSpinner';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardTitle } from '@/components/ui/card';
 import {
@@ -48,7 +49,7 @@ const CourseProgress = () => {
 
   if (isLoading)
     return (
-      <p className="text-6xl my-80 text-center text-blue-600">Loading...</p>
+      <LoadinSpinner/>
     );
   if (isError) return <p>Failed to load course details...</p>;
 
