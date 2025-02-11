@@ -10,7 +10,7 @@ import LoadinSpinner from './components/LoadinSpinner';
 
 const Custom = ({ children }) => {
   const { isLoading } = useLoadUserQuery();
-  return <>{isLoading ? <LoadinSpinner/> : <>{children}</>}</>;
+  return <>{isLoading ? <LoadinSpinner /> : <>{children}</>}</>;
 };
 createRoot(document.getElementById('root')).render(
   <StrictMode>

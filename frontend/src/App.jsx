@@ -71,7 +71,7 @@ const appRouter = createBrowserRouter([
         ),
       },
       {
-        path: "course-detail/:courseId",
+        path: "course-details/:courseId",
         element: (
           <ProtectedRoute>
             <CourseDetail />
@@ -127,80 +127,6 @@ const appRouter = createBrowserRouter([
     ],
   },
 ]);
-// const appRouter = createBrowserRouter([
-//   {
-//     path: '/',
-//     element: <MainLayout />,
-//     children: [
-//       {
-//         path: '/',
-//         element: (
-//           <>
-//             <HeroSection />
-//             <Courses />
-//           </>
-//         ),
-//       },
-//       {
-//         path: 'login',
-//         element: <Login />,
-//       },
-//       {
-//         path: 'my-learning',
-//         element: <MyLearning />,
-//       },
-//       {
-//         path: 'profile',
-//         element: <Profile />,
-//       },
-//       {
-//         path: 'course/search',
-//         element: <SearchPage />,
-//       },
-//       {
-//         path: 'course-detail/:courseId',
-//         element: <CourseDetail />,
-//       },
-//       {
-//         path: 'course-progress/:courseId',
-//         element: <CourseProgress />,
-//       },
-
-//       // admin
-//       {
-//         path: 'admin',
-//         element: <Sidebar />,
-//         children: [
-//           {
-//             path: 'dashboard',
-//             element: <Dashboard />,
-//           },
-//           {
-//             path: 'course',
-//             element: <CourseTable />,
-//           },
-//           {
-//             path: 'course/create',
-//             element: <AddCourse />,
-//           },
-//           {
-//             path: 'course/:courseId',
-//             element: <EditCourse />,
-//           },
-//           {
-//             path: 'course/:courseId/lecture',
-//             element: <CreateLecture />,
-//           },
-//           {
-//             path: 'course/:courseId/lecture/:lectureId',
-//             element: <EditLecture />,
-//           },
-//         ],
-//       },
-//     ],
-//   },
-// ]);
-
 function App() {
   return (
     <main>

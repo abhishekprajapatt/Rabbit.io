@@ -152,9 +152,9 @@ const Navbar = () => {
         </div>
       </div>
       {/* Mobile device  */}
-      <div className="flex md:hidden items-center justify-between px-4 h-full">
-        <h1 className="flex gap-2 font-extrabold text-2xl">
-          <img src={WiteLogo} className="w-8 " />
+      <div className="flex md:hidden items-center px-2 justify-between h-full">
+        <h1 className="flex font-extrabold gap-2 text-2xl">
+          <img src={WiteLogo} className="w-8 hidden dark:block" />
           <img src={BlackLogo} className="w-8 dark:hidden" />
           <Link to="/" className="font-extrabold text-2xl my-2">
             Rabbit.io
@@ -170,76 +170,93 @@ export default Navbar;
 
 const MobileNavbar = ({ user }) => {
   const navigate = useNavigate();
-
+  
   return (
-    <Sheet>
-      <SheetTrigger asChild>
-        <Button
-          size="icon"
-          className="rounded-full hover:bg-gray-200"
-          variant="outline"
-        >
-          <Menu />
-        </Button>
-      </SheetTrigger>
-      <SheetContent className="flex flex-col">
-        <SheetHeader className="flex flex-row items-center justify-between mt-2">
-          <SheetTitle
-            className="flex gap-2 cursor-pointer"
-            onClick={() => navigate('profile')}
-          >
-            <Avatar>
-              <AvatarImage
-                src={
-                  user?.photoUrl ||
-                  'https://wallpaperaccess.com/full/6856338.jpg'
-                }
-                alt="@shadcn"
-              />
-              <AvatarFallback>CN</AvatarFallback>
-            </Avatar>
-            <div className="flex flex-col">
-              <h1 className="font-bold text-gray-700 font-serif">
-                {user?.name}
-              </h1>
-              <h1 className="text-xs text-gray-400 font-thin">{user?.email}</h1>
+    <>
+      {user ? (
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button
+              size="icon"
+              className="rounded-full hover:bg-gray-200"
+              variant="outline"
+            >
+              <Menu />
+            </Button>
+          </SheetTrigger>
+          <SheetContent className="flex flex-col">
+            <SheetHeader className="flex flex-row items-center justify-between mt-2">
+              <SheetTitle
+                className="flex gap-2 cursor-pointer"
+                onClick={() => navigate('profile')}
+              >
+                <Avatar>
+                  <AvatarImage
+                    src={
+                      user?.photoUrl ||
+                      'https://wallpaperaccess.com/full/6856338.jpg'
+                    }
+                    alt="@shadcn"
+                  />
+                  <AvatarFallback>CN</AvatarFallback>
+                </Avatar>
+                <div className="flex flex-col">
+                  <h1 className="flex gap-4 font-bold text-gray-700 font-serif">
+                    {user?.name}
+                  <DarkMode />
+                  </h1>
+                  <h1 className="text-xs text-gray-400 font-thin">
+                    {user?.email}
+                  </h1>
+                </div>
+              </SheetTitle>
+            </SheetHeader>
+            <Separator className="mr-2" />
+            <nav className="flex flex-col space-y-4">
+              <Link to="/my-learning" className="flex gap-2 cursor-pointer">
+                <LibraryBig /> My Learning
+              </Link>
+              <Link to="/profile" className="flex gap-2 cursor-pointer">
+                {' '}
+                <UserPen />
+                Edit Profile
+              </Link>
+              <p className="flex gap-2 cursor-pointer">
+                {' '}
+                <LogOut />
+                Log out
+              </p>
+            </nav>
+            <div className="flex right-0">
+              {user?.role === 'instructor' && (
+                <SheetFooter className="">
+                  <SheetClose asChild>
+                    <Button
+                      type="submit"
+                      onClick={() => navigate('/admin/dashboard')}
+                    >
+                      {' '}
+                      <LayoutDashboard size={30} />
+                      Dashboard
+                    </Button>
+                  </SheetClose>
+                </SheetFooter>
+              )}
             </div>
-          </SheetTitle>
-          <DarkMode className="px-2" />
-        </SheetHeader>
-        <Separator className="mr-2" />
-        <nav className="flex flex-col space-y-4">
-          <Link to="/my-learning" className="flex gap-2 cursor-pointer">
-            <LibraryBig /> My Learning
-          </Link>
-          <Link to="/profile" className="flex gap-2 cursor-pointer">
-            {' '}
-            <UserPen />
-            Edit Profile
-          </Link>
-          <p className="flex gap-2 cursor-pointer">
-            {' '}
-            <LogOut />
-            Log out
-          </p>
-        </nav>
-        <div className="flex right-0">
-          {user?.role === 'instructor' && (
-            <SheetFooter className="">
-              <SheetClose asChild>
-                <Button
-                  type="submit"
-                  onClick={() => navigate('/admin/dashboard')}
-                >
-                  {' '}
-                  <LayoutDashboard size={30} />
-                  Dashboard
-                </Button>
-              </SheetClose>
-            </SheetFooter>
-          )}
+          </SheetContent>
+        </Sheet>
+      ) : (
+        <div className="flex items-center gap-1">
+          <Button
+            variant="outline"
+            className="p-2 bg-gradient-to-r from-blue-500 to-indigo-600 dark:from-gray-800 dark:to-gray-900 text-white rounded-full"
+            onClick={() => navigate('/login')}
+          >
+            Login
+          </Button>
+          <DarkMode />
         </div>
-      </SheetContent>
-    </Sheet>
+      )}
+    </>
   );
 };
